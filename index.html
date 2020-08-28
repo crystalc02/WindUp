@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  </head>
+  <body> 
+    <div class = "titleSlide">
+      <div class = "titleText">
+      <h1 class = "header"><strong>WindUp</strong></h1>
+      <h3 class = "tagLine"> <strong><em>Time to stop winding down. </em></strong></h3>
+      </div>
+      <div class = "titleImage">
+          <img class= "logo" src = "WindUp Logo.jpg">
+      </div>
+    </div>
+  <center>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'home')">HOME</button>
+  <button class="tablinks" onclick="openCity(event, 'toDo')">To-Do List</button>
+  <button class="tablinks" onclick="openCity(event, 'workMode')">Work Mode</button>
+  <button class="tablinks" onclick="openCity(event, 'calendar')">Calendar</button>
+  <button class="tablinks" onclick="openCity(event, 'aboutUs')">About Us</button>
+</div>
+
+<div id = "home" class= "tabcontent">
+  <h3><strong>Welcome!<strong></h3>
+  <h4> WindUp is a productivity website aimed to motivate and support YOU. Like our tagline says, it's time to stop winding down. </h4>
+  <button class = "newPhoto allBtn"> Click here for an inspirational photo!</button>
+  <p> </p>
+  <section class= "imgHome">
+  <img class= "inspo" src = "WindUp Logo.jpg">
+  </section>
+</div>
+
+<div id="toDo" class="tabcontent">
+  <h3><strong>What tasks do you have today?</strong></h3>
+  <section class = "allInputs">
+  <section class = "toDoInputs">
+  <div class = "leftListInputs">
+  <label>To do: 
+    <input class="newTask" type = "text" placeholder= "Homework, Feed my cat, etc.">
+  </label>
+  <form>
+    <label>
+      <div class= "priority">
+      Priority (optional):
+      <form>
+        <input type="radio" class="priorityLevelLow" name = "priority" value = "low">
+          <label for="low">!</label>
+        <input type="radio" class = "priorityLevelMed" name = "priority" value = "med">
+          <label for="med">!!</label>
+        <input type="radio" class= "priorityLevelImpt" name = "priority" value = "high">
+        <label for="high">!!!</label>
+      </form>
+    <label>
+      
+      </div>
+    </label>
+    </form>
+    <button class="addTaskBtn allBtn">Add Task</button>
+  </div>
+  <div class = "rightListInputs">
+  <label> Habits/Goals:
+    <input class="newHabitTxt" type= "text" placeholder= "Drink water, Be positive, etc.">
+  </label>
+    <button class="addHabitsBtn allBtn"> Add Habits </button>
+  </div>
+  </section>
+  </section>
+
+  <section class= "todoListBtns">
+    
+    
+  </section>
+  <p></p>
+  
+  <div class="combinedList">
+    <section class = "leftList">
+    <section class="toDoList">
+      <h4><u><strong>My To-Do List!</strong></u></h4>
+        <div class = "highPriorityTasks">
+        </div>
+        <div class = "medPriorityTasks">
+        </div>
+        <div class = "lowPriorityTasks">
+        </div>
+        </section>
+      <section class="tComplete">
+     </section> 
+    </section>
+    <section class = "dailyHabitsGoals">
+      <h4><u> <strong>Daily Habits/Goals </strong></u></h4>
+        <div class="habitList">
+        </div>
+        <div class="hComplete">
+        </div>
+    </section> 
+</div> 
+</div>
+
+<div id="workMode" class="tabcontent">
+  <h3><strong>Tools to Help you Stay Productive</strong></h3>
+  <div id="timer">
+
+    </div>
+    <div class="vidContainer">
+    </div>
+    <button class = "backgroundNoise allBtn">Click here for Background Noise</button>
+  <p></p>
+
+    <div class = "timerCont">
+    <label> Date:</label>
+    <input class = "month" type = "number" placeholder="MM">
+    <input class = "day" type = "number" placeholder="DD">
+    <input class = "year" type = "number" placeholder="YYYY"><br>
+    <p></p>
+    <label>Current Time:</label>
+    <input class = "currH" type = "number" placeholder="HH">
+    <input class = "currM" type = "number" placeholder="MM">
+
+    <input class = "amPm" type="text" placeholder= "AM/PM" maxlength = "2"><br><p></p>
+    <label class = "timerQ">How long do you want to set the timer for? </label><br><p></p>
+    <input class="hours" type = "number" placeholder = "How many hours?"> 
+    <input class="minutes" type="number" placeholder="How many minutes?"><br>
+  <button class="timerBtn allBtn">Enter</button>
+  <p id="demo"></p>
+  <button class="reset allBtn">Reset</button>
+    </div>
+</div>
+
+<div id="calendar" class="tabcontent">
+  <h3><strong>Reference Calendar</strong></h3>
+  <center>
+  <iframe class = "calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=YnVnMnBtOGgycnZtaWFuaTNhaWY4OXFyMzRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23F09300&amp;color=%23B39DDB" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  </center>
+  <p></p>
+  <label class= "events">
+    Events:
+  </label>
+  <button class= "addEvent allBtn"><a href = "https://www.google.com/calendar">Add an Event to Your Google Calendar</a></button>
+  <section class= "Events & Schedule">
+  </section>
+</div>
+
+<div id = "aboutUs" class= "tabcontent">
+  <h3><strong>The Creators of WindUp<strong></h3><br>
+  <div class = "bios">
+    <p class = "creatorNames"> <strong>JIREH BARAVIO</strong></p> 
+    <div class = "creator">
+      <p class = "creatorBios">
+        <img class= "bioPic" src = "Jirehimg.jpg" alt = "Jireh Baravio"> <!--put img file name in src-->
+        I'm an incoming high school junior from McAllen, TX. My favorite subjects have been math and computer science. Aside from school, I really like journaling, being with my family and friends, listening to music, and coding. It's tempting to procastinate, I've experienced that too. So I hope that this website will help you get productive.</p>
+    </div>
+    <p class = "creatorNames"> <strong> HANNAH BANG</strong></p> 
+    <div class = "creator">
+      <p class = "creatorBios"> 
+        <img class= "bioPic" src = "HannahPfp.JPG" alt = "Hannah Bang"> <!--put img file name in src-->
+        Hi! I'm a rising high school senior from Flower Mound,TX. I'm interested in pursuing in fields related to business/entrepreneurship or policy! I like playing the flute, reading, spending time with friends and family, and trying something new! Speaking of, this is my first time ever coding, and I'm so greatful for Kode with Klossy for this opportunity. Hope this website helps you as much as it helped me! 
+      </p>
+    </div>
+  <p class = "creatorNames"> <strong> CRYSTAL CHANG </strong></p> 
+    <div class = "creator">
+      <p class = "creatorBios"> 
+        <img class= "bioPic" src = "c pic.jpg" alt = "Crystal Chang"> 
+        Hello! I'm an incoming college freshman majoring in Electrical Engineering Computer Science and Business Administration at the University of California Berkeley, originally from Houston, Texas. In my free time, I like playing piano, dancing, and watching many many TV shows   \ ( ^_^) /  !
+      </p> 
+    </div>
+  <p class = "creatorNames"> <strong> ZOE KATZ</strong></p>
+  <div class = "creator">
+     <p class = "creatorBios"> 
+       <img class= "bioPic" src = "ZoePhoto.jpg" alt = "Zoe Katz"> <!--put img file name in src-->
+       I'm an incoming college freshman double majoring in Computer Science and Linguistics at Rice University. I enjoy learning languages, playing Geoguessr, and reading a good book. I have had a great time participating in both Kode with Klossy camps and am so excited to keep coding! Thanks for stopping by :) 
+      </p>
+  </div>
+  </div>
+  <img class= "endLogo" src = "WindUp Logo.jpg">
+</div>
+
+
+    <script src="script.js"></script>
+  </body> </center>
+</html>
